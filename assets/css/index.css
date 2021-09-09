@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Rc-reg";
+    src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
+} 
+@font-face {
+    font-family: "Qc-reg";
+    src: url("../fonts/Quicksand-Regular.ttf") format("truetype");
+} 
+@font-face {
+    font-family: "Qc-sb";
+    src: url("../fonts/Quicksand-SemiBold.ttf") format("truetype");
+} 
+body{
+    font-family: 'Qc-reg';
+} 
+
+/* WHATSAPP */
+#whatsapp{
+    font-family: 'Rc-reg';
+} 
+
+/* ALERT INFO */
+#alert-info{
+    background-image: linear-gradient(to top, #007BFF,#7ebafa);
+} 
+.link-wraper a{
+    font-size: 14px; 
+} 
+.link-wraper a img{
+    width: 16px; 
+} 
+
+/* NAVBAR */
+nav{
+    /* background-color: rgba(0, 123, 255,0.1); */
+} 
+.navbar-brand{
+    font-family: 'Rc-reg';
+    font-size: 40px !important;
+    opacity: 0.8;
+} 
+.navbar-nav{
+    font-family: 'Qc-sb';
+    letter-spacing: 0.5px;
+    font-size: 16px;
+} 
+.li-active{
+    color: #EFC061 !important;
+    border-bottom: 4px solid #EFC061;
+} 
+a.nav-link{
+    transition: color 0.2s;
+} 
+a.nav-link:hover{
+    color: #EFC061 !important;
+} 
+
+/* SLIDER */
+.carousel-item,
+.active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#text-header h4{
+    font-family: 'Qc-sb';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
+    font-size: 26px;
+} 
+#text-header h1{
+    font-family: 'Rc-reg';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
+    font-size: 74px;
+} 
+#text-header a{
+    font-family: 'Qc-sb';
+    font-size: 18px;
+    letter-spacing: 2px;
+} 
+
+
+@media (max-width: 930px) {
+    .navbar-brand{
+        font-size: 30px !important;
+    } 
+    .navbar-nav{
+        font-size: 14px;
+    } 
+
+    #text-header h4{
+        font-size: 22px;
+    } 
+    #text-header h1{
+        font-size: 50px;
+    } 
+    #text-header a{
+        font-size: 14px;
+        letter-spacing: 2px;
+    } 
+}
+@media (max-width: 580px) {
+    .navbar-brand{
+        font-size: 20px !important;
+    } 
+    .link-wraper a{
+        font-size: 10px; 
+    } 
+    .link-wraper a img{
+        width: 12px; 
+    } 
+
+    #text-header h1{
+        font-size: 36px;
+    } 
+    #text-header a{
+        padding: 10px 10px !important;
+        letter-spacing: 1px;
+    } 
+}
+
