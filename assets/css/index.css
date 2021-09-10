@@ -1,59 +1,74 @@
 @font-face {
     font-family: "Rc-reg";
     src: url("../fonts/RobotoCondensed-Bold.ttf") format("truetype");
-} 
+}
 @font-face {
     font-family: "Qc-reg";
     src: url("../fonts/Quicksand-Regular.ttf") format("truetype");
-} 
+}
 @font-face {
     font-family: "Qc-sb";
     src: url("../fonts/Quicksand-SemiBold.ttf") format("truetype");
-} 
+}
 body{
     font-family: 'Qc-reg';
-} 
+}
 
 /* WHATSAPP */
 #whatsapp{
     font-family: 'Rc-reg';
-} 
+    transition: all 0.3s;
+}
+#whatsapp.hide{
+    opacity: 0;
+}
 
 /* ALERT INFO */
 #alert-info{
-    background-image: linear-gradient(to top, #007BFF,#7ebafa);
-} 
+    background-image: linear-gradient(to top, #FFC107,#f1d170);
+    height: 30px;
+    transition: all 0.3s;
+}
+#alert-info.hide{
+    height: 0;
+}
 .link-wraper a{
-    font-size: 14px; 
-} 
+    font-size: 14px;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.8px;
+}
+.link-wraper a:hover{
+    color: white !important;
+}
 .link-wraper a img{
-    width: 16px; 
-} 
+    width: 16px;
+}
 
 /* NAVBAR */
 nav{
     /* background-color: rgba(0, 123, 255,0.1); */
-} 
+}
 .navbar-brand{
     font-family: 'Rc-reg';
     font-size: 40px !important;
     opacity: 0.8;
-} 
+}
 .navbar-nav{
     font-family: 'Qc-sb';
     letter-spacing: 0.5px;
     font-size: 16px;
-} 
-.li-active{
-    color: #EFC061 !important;
-    border-bottom: 4px solid #EFC061;
-} 
+}
 a.nav-link{
-    transition: color 0.2s;
-} 
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+    /* transition: color 0.2s; */
+}
 a.nav-link:hover{
     color: #EFC061 !important;
-} 
+}
+a.nav-link.li-active{
+    color: #EFC061 !important;
+    border-bottom: 4px solid #EFC061;
+}
 
 /* SLIDER */
 .carousel-item,
@@ -77,55 +92,140 @@ a.nav-link:hover{
     font-family: 'Qc-sb';
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
     font-size: 26px;
-} 
+}
 #text-header h1{
     font-family: 'Rc-reg';
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
     font-size: 74px;
-} 
+}
 #text-header a{
     font-family: 'Qc-sb';
-    font-size: 18px;
+    font-size: 14px;
     letter-spacing: 2px;
-} 
+    padding: 12px 16px;
+}
 
+/* LOWONGAN */
+#lowongan{
+    background-color: rgba(255, 193, 7, 0.3);
+}
+#lowongan h1{
+    font-family: 'Rc-reg';
+}
+#lowongan p{
+    font-family: 'Qc-reg';
+}
+#lowongan b{
+    font-family: 'Qc-sb';
+}
+#lowongan p,ol{
+    font-size: 1rem;
+}
+
+/* SERVICE */
+/* #service h1,
+#service #our,
+#service #serv{
+    line-height: normal;
+} */
+#service #our{
+    font-family: 'Rc-reg';
+}
+#service #serv{
+    font-family: 'Rc-reg';
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+#service h2{
+    color: rgba(0, 0, 0, 0.4);
+    transform: translateY(-10px);
+    font-family: 'Qc-sb';
+}
+#service .card{
+    min-height: 200px !important;
+    box-sizing: border-box;
+}
+#service img{
+    width: 30% !important;
+    opacity: 0.8;
+}
+#service h3{
+    letter-spacing: 1px;
+    font-family: 'Qc-sb';
+    opacity: 0.8;
+}
+
+footer{
+    opacity: 0.8;
+}
+footer b{
+    font-family: 'Rc-reg';
+}
 
 @media (max-width: 930px) {
     .navbar-brand{
         font-size: 30px !important;
-    } 
+    }
     .navbar-nav{
         font-size: 14px;
-    } 
+    }
 
     #text-header h4{
         font-size: 22px;
-    } 
+    }
     #text-header h1{
         font-size: 50px;
-    } 
+    }
     #text-header a{
         font-size: 14px;
         letter-spacing: 2px;
-    } 
+    }
 }
-@media (max-width: 580px) {
+
+@media (max-width: 576px) {
+    #service h2{
+        font-size: 17px;
+    }
+    #service .card{
+        min-height: 250px !important;
+    }
+
+    footer{
+        font-size: 13px !important;
+    }
+}
+@media (max-width: 414px) {
     .navbar-brand{
         font-size: 20px !important;
-    } 
+    }
     .link-wraper a{
-        font-size: 10px; 
-    } 
+        font-size: 10px;
+    }
     .link-wraper a img{
-        width: 12px; 
-    } 
+        width: 12px;
+    }
 
+    #text-header h4{
+        font-size: 14px;
+    }
     #text-header h1{
-        font-size: 36px;
-    } 
+        font-size: 28px;
+    }
     #text-header a{
-        padding: 10px 10px !important;
+        margin-top: 30px !important;
+        padding: 10px 14px !important;
+        font-size: 10px;
         letter-spacing: 1px;
-    } 
+    }
+
+    #lowongan p,ol{
+        font-size: 0.8rem;
+    }
+
+    #service h2{
+        transform: translateY(0px);
+    }
+    #service .separator{
+        display: none !important;
+    }
 }
 
